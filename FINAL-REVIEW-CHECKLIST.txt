@@ -1,0 +1,30 @@
+FINAL 10/10 REVIEW CHECKLIST
+
+COMPLETED IN THIS PACKAGE
+[✓] Solar consulting removed
+[✓] AI/ML, blockchain and enterprise software positioned as primary practices
+[✓] Redis for India Government significantly expanded
+[✓] Government and PSU solution page added
+[✓] ITI Limited, TCIL and state-government positioning added with permission warning
+[✓] Affiliate marketing significantly expanded
+[✓] One Engine public client portfolio adapted as group portfolio experience
+[✓] Different animation behaviour on different page groups while retaining the current video
+[✓] Contact form alignment and hierarchy rebuilt
+[✓] Homepage, About, Products and product pages expanded
+[✓] Navigation, footer, SEO sitemap and noindex rules improved
+[✓] Mobile and reduced-motion handling improved
+
+OWNER / LEGAL VERIFICATION STILL REQUIRED BEFORE PUBLIC LAUNCH
+[ ] Written permission to display ITI Limited and TCIL names/logos
+[ ] Confirmation that state-government project references may be public
+[ ] Exact legal wording linking IRAH Solution and One Engine Media Works
+[ ] Permission to display portfolio brands under IRAH/group experience
+[ ] Verified campaign/project scope, dates and outcome figures
+[ ] Registered entity name, CIN/GST/MSME and office address for footer/legal pages
+[ ] Leadership names, photos and biographies
+[ ] Privacy/cookie language reviewed by counsel
+[ ] Authenticated SMTP configured and form delivery tested
+[ ] Cross-browser, device, accessibility and Lighthouse testing on live hosting
+[ ] Final image compression/CDN/caching after deployment
+
+These remaining items cannot be truthfully completed from code alone; they require owner documents, permissions, credentials or live-host testing.

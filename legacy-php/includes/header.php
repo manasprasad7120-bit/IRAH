@@ -1,0 +1,25 @@
+<?php
+if (session_status() === PHP_SESSION_NONE) { session_start(); }
+header_remove('X-Powered-By');
+$pageTitle = $pageTitle ?? 'IRAH Solution';
+$pageDescription = $pageDescription ?? 'IRAH Solution designs enterprise AI, blockchain, Redis and software platforms for governments, PSUs and growth-led businesses.';
+$pageKey = $pageKey ?? 'default';
+$videoMap = [
+ 'home'=>'irah-bg.mp4','platform'=>'irah-platform.mp4','ai'=>'irah-ai.mp4','blockchain'=>'irah-blockchain.mp4','redis'=>'irah-redis.mp4',
+ 'affiliate'=>'irah-affiliate.mp4','traceability'=>'irah-traceability.mp4','contact'=>'irah-contact.mp4','government'=>'irah-government.mp4',
+ 'services'=>'irah-ai.mp4','products'=>'irah-traceability.mp4','industries'=>'irah-industries.mp4','labs'=>'irah-labs.mp4','resources'=>'irah-resources.mp4','careers'=>'irah-careers.mp4','case-redis'=>'irah-case-redis.mp4','case-affiliate'=>'irah-case-affiliate.mp4','architect'=>'irah-platform.mp4','search'=>'irah-resources.mp4'
+];
+$bgVideo = $videoMap[$pageKey] ?? 'irah-bg.mp4';
+$canonical = $canonical ?? ('https://irahsolution.com/' . basename($_SERVER['PHP_SELF']));
+$noindex = $noindex ?? false;
+?>
+<!doctype html><html lang="en" data-page="<?= htmlspecialchars($pageKey) ?>"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title><?= htmlspecialchars($pageTitle) ?></title><meta name="description" content="<?= htmlspecialchars($pageDescription) ?>"><meta name="theme-color" content="#050505">
+<?php if($noindex): ?><meta name="robots" content="noindex,nofollow"><?php endif; ?>
+<link rel="canonical" href="<?= htmlspecialchars($canonical) ?>"><meta property="og:type" content="website"><meta property="og:site_name" content="IRAH Solution"><meta property="og:title" content="<?= htmlspecialchars($pageTitle) ?>"><meta property="og:description" content="<?= htmlspecialchars($pageDescription) ?>"><meta property="og:url" content="<?= htmlspecialchars($canonical) ?>"><meta property="og:image" content="https://irahsolution.com/assets/images/social-preview.png"><meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/images/logo-small.png"><link rel="stylesheet" href="assets/css/styles.css?v=20260712-phase9">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"IRAH Solution","url":"https://irahsolution.com","logo":"https://irahsolution.com/assets/images/logo.png","email":"contact@irahsolution.com","sameAs":["https://www.linkedin.com/company/92485921/","https://www.instagram.com/irah.solution/"]}</script>
+</head><body><a class="skip-link" href="#main">Skip to content</a><div class="page-loader" id="pageLoader"><div class="loader-ring"></div><span>IRAH</span></div>
+<div class="background" aria-hidden="true"><video id="bgVideo" class="bg-video" autoplay muted loop playsinline preload="metadata" poster="assets/images/bg-poster.jpg"><source src="assets/video/<?= htmlspecialchars($bgVideo) ?>" type="video/mp4"></video><canvas id="networkCanvas"></canvas><div class="page-symbol" id="pageSymbol"></div><div class="data-ribbon ribbon-a"></div><div class="data-ribbon ribbon-b"></div><div class="aurora aurora-a"></div><div class="aurora aurora-b"></div><div class="hud hud-one"><span></span><span></span><span></span></div><div class="hud hud-two"><span></span><span></span></div><div class="india-pulse"><b></b><i></i><em>INDIA</em></div><div class="scanline"></div><div class="grid-overlay"></div><div class="vignette"></div></div>
+<header class="site-header"><nav class="nav container" aria-label="Primary navigation"><a class="brand" href="index.php"><img src="assets/images/logo-small.png" alt="IRAH Solution"><span>IRAH Solution</span></a><button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="navLinks"><span></span><span></span><span></span></button><ul class="nav-links" id="navLinks"><li class="has-sub"><a href="platform.php">Platform</a><div class="sub-menu"><a href="services.php">Enterprise Software</a><a href="ai-ml.php">AI/ML Engineering</a><a href="blockchain.php">Blockchain Platforms</a><a href="redis-government.php">Redis Performance</a></div></li><li class="has-sub"><a href="government-solutions.php">Solutions</a><div class="sub-menu"><a href="government-solutions.php">Government & PSU</a><a href="industries.php">Industries</a><a href="affiliate-marketing.php">Affiliate Growth</a></div></li><li><a href="products.php">Products</a></li><li><a href="case-studies.php">Work</a></li><li class="has-sub"><a href="resources.php">Resources</a><div class="sub-menu"><a href="blogs.php">Knowledge Hub</a><a href="downloads.php">Downloads</a><a href="irah-labs.php">IRAH Labs</a></div></li><li><a href="solution-architect.php">Solution Architect</a></li><li><a href="search.php" aria-label="Search site">Search</a></li><li><a href="about.php">Company</a></li><li><a class="nav-cta" href="contact.php">Start a conversation</a></li></ul></nav></header><main id="main">

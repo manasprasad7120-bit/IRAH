@@ -1,0 +1,3 @@
+<?php $pageTitle='Page Not Found | IRAH Solution'; $pageDescription='The requested page could not be found.'; $pageKey='error'; include __DIR__.'/includes/header.php'; ?>
+<section class="page-hero"><div class="container"><span class="eyebrow">404</span><h1 class="gradient">This page is not available.</h1><p>The link may be outdated or the page may have moved.</p><div class="actions"><a class="btn btn-primary" href="index.php">Go to homepage</a></div></div></section>
+<?php include __DIR__.'/includes/footer.php'; ?>
