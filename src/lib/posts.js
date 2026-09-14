@@ -1,16 +1,6 @@
 // Insight articles, ported from the post-*.php pages.
 // Every article closes with the same "Next step" block and CTA.
 export const posts = {
-  '/post-redis-government-performance': {
-    title: 'Where Redis creates value in government applications',
-    lead: 'Redis is most useful when matched to a specific workload rather than added as a generic speed layer.',
-    sections: [
-      ['Start with the bottleneck', 'Measure latency, throughput, database load, error rates and peak behaviour before proposing a technology change.'],
-      ['Choose the right pattern', 'Caching, session management, rate limiting, queues, streams and real-time counters solve different problems.'],
-      ['Design for correctness', 'Expiry, invalidation, fallback, persistence, access control and monitoring should be part of the first design.'],
-      ['Prove value', 'A focused PoC should compare a stable baseline with the proposed architecture under realistic load.'],
-    ],
-  },
   '/post-ai-counterfeit-detection': {
     title: 'AI for counterfeit detection',
     lead: 'AI should prioritise suspicious activity for human review rather than make unsupported enforcement decisions.',

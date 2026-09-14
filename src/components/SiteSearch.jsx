@@ -13,7 +13,7 @@ export default function SiteSearch() {
       <input
         id="siteSearchInput"
         type="search"
-        placeholder="Try Redis, AI, government, blockchain, affiliate…"
+        placeholder="Try AI, government, blockchain, traceability, affiliate…"
         value={query}
         onChange={(e) => setQuery(e.target.value)}
       />
@@ -28,7 +28,7 @@ export default function SiteSearch() {
           ))
         ) : (
           <div className="card">
-            No matching pages. Try Redis, AI, government, blockchain or affiliate.
+            No matching pages. Try AI, government, blockchain, traceability or affiliate.
           </div>
         )}
       </div>

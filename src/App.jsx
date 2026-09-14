@@ -8,7 +8,6 @@ import Blockchain from './pages/Blockchain'
 import Blogs from './pages/Blogs'
 import Careers from './pages/Careers'
 import CaseAffiliateScale from './pages/CaseAffiliateScale'
-import CaseRedisGovernment from './pages/CaseRedisGovernment'
 import CaseStudies from './pages/CaseStudies'
 import CatchAll from './pages/CatchAll'
 import Contact from './pages/Contact'
@@ -21,7 +20,6 @@ import Platform from './pages/Platform'
 import Post from './pages/Post'
 import PrivacyPolicy from './pages/PrivacyPolicy'
 import Products from './pages/Products'
-import RedisGovernment from './pages/RedisGovernment'
 import Resources from './pages/Resources'
 import Search from './pages/Search'
 import SeedTraceability from './pages/SeedTraceability'
@@ -40,7 +38,6 @@ export default function App() {
         <Route path="/services" element={<Services />} />
         <Route path="/ai-ml" element={<AiMl />} />
         <Route path="/blockchain" element={<Blockchain />} />
-        <Route path="/redis-government" element={<RedisGovernment />} />
         <Route path="/government-solutions" element={<GovernmentSolutions />} />
         <Route path="/industries" element={<Industries />} />
         <Route path="/affiliate-marketing" element={<AffiliateMarketing />} />
@@ -48,7 +45,6 @@ export default function App() {
         <Route path="/bharat-food-assure" element={<BharatFoodAssure />} />
         <Route path="/seed-traceability" element={<SeedTraceability />} />
         <Route path="/case-studies" element={<CaseStudies />} />
-        <Route path="/case-redis-government" element={<CaseRedisGovernment />} />
         <Route path="/case-affiliate-scale" element={<CaseAffiliateScale />} />
         <Route path="/resources" element={<Resources />} />
         <Route path="/blogs" element={<Blogs />} />

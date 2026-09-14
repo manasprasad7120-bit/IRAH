@@ -96,13 +96,13 @@ export default function GovernmentSolutions() {
             </div>
             <p>
               IRAH can contribute specialist architecture, software modules, AI/ML, blockchain,
-              Redis performance engineering, product design and programme support within a larger
+              application acceleration, product design and programme support within a larger
               consortium or system-integration structure.
             </p>
           </div>
           <div className="logo-wall">
-            <span>ITI Limited</span>
-            <span>TCIL</span>
+            <span>Central PSUs</span>
+            <span>State PSUs</span>
             <span>System Integrators</span>
             <span>State IT Departments</span>
             <span>Mission Directorates</span>

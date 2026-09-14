@@ -1,8 +1,7 @@
 import { Link } from 'react-router-dom'
 
 const BRIEFS = [
-  ['irah-enterprise-capability.pdf', 'Enterprise Capability', 'AI, software, blockchain, Redis and delivery model.'],
-  ['redis-government-brief.pdf', 'Redis for Government', 'PoC, architecture, resilience and adoption roadmap.'],
+  ['irah-enterprise-capability.pdf', 'Enterprise Capability', 'AI, software, blockchain and delivery model.'],
   ['ai-government-brief.pdf', 'AI for Government', 'Use cases, controls and implementation approach.'],
   ['affiliate-growth-brief.pdf', 'Affiliate Growth', 'Attribution, partner operations and quality governance.'],
 ]

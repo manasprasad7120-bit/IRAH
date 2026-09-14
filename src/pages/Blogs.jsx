@@ -2,7 +2,6 @@ import { Link } from 'react-router-dom'
 import HeroConsole from '../components/HeroConsole'
 
 const POSTS = [
-  ['/post-redis-government-performance', 'REDIS', 'Where Redis fits in government applications', 'Caching, sessions, queues, rate limits and a safe PoC approach.'],
   ['/post-ai-counterfeit-detection', 'AI/ML', 'AI for counterfeit detection', 'From scan anomalies and computer vision to evidence-led investigation.'],
   ['/post-modeling-seed-supply-chain', 'BLOCKCHAIN', 'Modelling the seed supply chain', 'Data structures for varieties, generations, lots and lineage.'],
   ['/post-offline-first-scan-apps', 'PRODUCT', 'Offline-first field applications', 'Reliable capture and synchronisation when connectivity is uncertain.'],
@@ -19,7 +18,7 @@ export default function Blogs() {
             <span className="eyebrow">Insights</span>
             <h1 className="gradient">Practical thinking for technology, government and growth teams.</h1>
             <p className="hero-lead">
-              Architecture notes, implementation playbooks and operating lessons across Redis, AI,
+              Architecture notes, implementation playbooks and operating lessons across AI,
               blockchain, traceability and performance marketing.
             </p>
             <div className="actions" />

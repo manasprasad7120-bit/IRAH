@@ -14,9 +14,9 @@ const LAYERS = [
     stack: 'API Gateway · IAM · Workflow · Events',
   },
   {
-    label: 'Redis',
+    label: 'Performance',
     title: 'Real-time performance',
-    copy: 'Redis accelerates repeated reads, sessions, queues, streams and short-lived state while observability protects production behaviour.',
+    copy: 'An in-memory data layer accelerates repeated reads, sessions, queues, streams and short-lived state while observability protects production behaviour.',
     stack: 'Cache · Sessions · Streams · Search',
   },
   {

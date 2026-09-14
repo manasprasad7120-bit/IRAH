@@ -32,7 +32,7 @@ export default function About() {
             <h2>Not technology for its own sake.</h2>
             <p>
               IRAH exists to build systems that improve speed, trust, visibility and service
-              delivery. We bring AI/ML, blockchain, Redis, enterprise software and performance
+              delivery. We bring AI/ML, blockchain, enterprise software and performance
               marketing together under one principle: every solution must connect to a measurable
               operational or business outcome.
             </p>

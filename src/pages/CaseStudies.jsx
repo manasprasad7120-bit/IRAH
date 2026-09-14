@@ -10,8 +10,8 @@ export default function CaseStudies() {
             <span className="eyebrow">Case studies &amp; solution blueprints</span>
             <h1 className="gradient">Clear problems. Practical architecture. Measurable outcomes.</h1>
             <p className="hero-lead">
-              Explore how IRAH approaches government performance, traceability, enterprise software
-              and affiliate growth challenges.
+              Explore how IRAH approaches traceability, enterprise software and affiliate growth
+              challenges.
             </p>
             <div className="actions">
               <Link className="btn btn-primary" to="/contact">
@@ -26,14 +26,6 @@ export default function CaseStudies() {
       <section className="section">
         <div className="container">
           <div className="grid-2">
-            <Link className="card" to="/case-redis-government">
-              <span className="card-no">GOVERNMENT PERFORMANCE</span>
-              <h3>Redis PoC blueprint</h3>
-              <p>
-                A controlled approach to reducing latency and database pressure in a high-traffic
-                public application.
-              </p>
-            </Link>
             <Link className="card" to="/case-affiliate-scale">
               <span className="card-no">PERFORMANCE GROWTH</span>
               <h3>Affiliate scale with controls</h3>
@@ -57,8 +49,9 @@ export default function CaseStudies() {
             </Link>
           </div>
           <p className="disclaimer">
-            Case studies must distinguish verified delivered results from proposed architecture, PoC
-            outcomes or illustrative targets.
+            The pages above set out solution architecture and PoC method rather than results from a
+            single named deployment. Verified delivery figures are shared directly, on request,
+            under NDA.
           </p>
         </div>
       </section>

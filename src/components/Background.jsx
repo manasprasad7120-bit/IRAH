@@ -3,7 +3,6 @@ import { videoMap } from '../lib/routeMeta'
 
 // Canvas configuration per page mode, ported from assets/js/app.js.
 const CONFIGS = {
-  redis: { nodes: 125, speed: 0.42, links: 115, packet: 28, accent: '220,74,74' },
   ai: { nodes: 170, speed: 0.28, links: 145, packet: 20, accent: '216,179,79' },
   blockchain: { nodes: 95, speed: 0.18, links: 170, packet: 12, accent: '214,202,160' },
   affiliate: { nodes: 145, speed: 0.38, links: 125, packet: 24, accent: '216,179,79' },
@@ -133,7 +132,7 @@ export default function Background({ pageKey }) {
         x.fillStyle = `rgba(${cfg.accent},.95)`
         x.shadowBlur = 14
         x.shadowColor = `rgb(${cfg.accent})`
-        x.arc(px, py, mode === 'redis' ? 2.8 : 2.1, 0, Math.PI * 2)
+        x.arc(px, py, 2.1, 0, Math.PI * 2)
         x.fill()
         x.shadowBlur = 0
       }

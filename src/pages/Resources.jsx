@@ -26,7 +26,7 @@ export default function Resources() {
         <div className="container grid-3">
           <Link className="card" to="/blogs">
             <h3>Technical insights</h3>
-            <p>Deep dives into Redis, AI, blockchain, offline-first apps and attribution.</p>
+            <p>Deep dives into AI, blockchain, offline-first apps and attribution.</p>
           </Link>
           <Link className="card" to="/downloads">
             <h3>Capability briefs</h3>

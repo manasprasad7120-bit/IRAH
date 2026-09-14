@@ -1,17 +1,15 @@
 import { Link } from 'react-router-dom'
 import HeroConsole from '../components/HeroConsole'
 
-const CLIENTS = [
-  ['amazon', 'amazon logo'],
-  ['kreditbee', 'KreditBee logo'],
-  ['parimatch', 'PARIMATCH logo'],
-  ['groww', 'Groww logo'],
-  ['dominos', 'Domino’s logo'],
-  ['zee5', 'ZEE5 logo'],
-  ['myntra', 'Myntra logo'],
-  ['firstcry', 'FirstCry logo'],
-  ['astropay', 'AstroPay logo'],
-  ['getpsi', 'GetPSI logo'],
+const CATEGORIES = [
+  'E-commerce & marketplaces',
+  'Fintech & lending',
+  'Digital payments',
+  'Wealth & investing',
+  'OTT & subscription',
+  'Online gaming',
+  'Consumer retail',
+  'Quick-service restaurants',
 ]
 
 export default function AffiliateMarketing() {
@@ -26,15 +24,15 @@ export default function AffiliateMarketing() {
             </h1>
             <p className="hero-lead">
               IRAH combines advertiser strategy, publisher operations, attribution engineering,
-              fraud controls, creative optimisation and reconciliation—drawing on group portfolio
-              experience from One Engine Media Works.
+              fraud controls, creative optimisation and reconciliation under one accountable
+              operating model.
             </p>
             <div className="actions">
               <Link className="btn btn-primary" to="/contact?intent=affiliate">
                 Launch a campaign
               </Link>
               <a className="btn btn-secondary" href="#portfolio">
-                View portfolio experience
+                View category experience
               </a>
             </div>
           </div>
@@ -133,26 +131,22 @@ export default function AffiliateMarketing() {
         <div className="container">
           <div className="section-head">
             <div>
-              <span className="eyebrow">Group portfolio experience</span>
-              <h2>Brands represented by One Engine Media Works.</h2>
+              <span className="eyebrow">Category experience</span>
+              <h2>Where we have run governed acquisition programmes.</h2>
             </div>
             <p>
-              Use this portfolio only where IRAH has the legal right to reference the work and
-              clearly state the relationship between the entities.
+              Each category converts on a different business event, so each one needs its own
+              validation rules, payout logic and quality thresholds.
             </p>
           </div>
-          <div className="client-marquee" aria-label="Group portfolio brands">
-            <div className="client-track">
-              {[...CLIENTS, ...CLIENTS].map(([slug, alt], i) => (
-                <div className="client-logo" key={`${slug}-${i}`}>
-                  <img src={`/assets/images/clients/${slug}.svg`} alt={alt} loading="lazy" />
-                </div>
-              ))}
-            </div>
+          <div className="logo-wall">
+            {CATEGORIES.map((c) => (
+              <span key={c}>{c}</span>
+            ))}
           </div>
           <p className="disclaimer">
-            Source portfolio adapted from One Engine Media Works’ public website. Campaign scope,
-            period and results should be verified before publication under IRAH Solution.
+            Named advertiser and publisher references, campaign scope and verified outcome figures
+            are shared directly, on request, under NDA.
           </p>
         </div>
       </section>

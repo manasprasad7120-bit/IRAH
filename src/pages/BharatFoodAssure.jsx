@@ -14,7 +14,7 @@ export default function BharatFoodAssure() {
               workflows, AI-led risk signals and consumer verification in one platform.
             </p>
             <div className="actions">
-              <Link className="btn btn-primary" to="/contact?intent=bfa">
+              <Link className="btn btn-primary" to="/contact?intent=blockchain">
                 Discuss a pilot
               </Link>
             </div>

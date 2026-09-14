@@ -1,16 +1,7 @@
 import { useState } from 'react'
 import { useNavigate, useSearchParams } from 'react-router-dom'
+import { INTENTS, normaliseIntent } from '../lib/intents'
 import { sendEnquiry } from '../lib/sendEnquiry'
-
-const INTENTS = [
-  ['redis', 'Redis PoC'],
-  ['ai', 'AI/ML platform'],
-  ['software', 'Enterprise software'],
-  ['blockchain', 'Blockchain / traceability'],
-  ['government', 'Government / PSU programme'],
-  ['affiliate', 'Affiliate growth'],
-  ['other', 'Other'],
-]
 
 const STAGES = [
   'Exploring',
@@ -35,6 +26,9 @@ const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 export default function ContactForm() {
   const [params] = useSearchParams()
   const navigate = useNavigate()
+  // Ignore an unrecognised ?intent= (old bookmark, stale campaign link) rather than
+  // pushing an unmatched value into the select and blanking a required field.
+  const initialIntent = normaliseIntent(params.get('intent'))
   const [error, setError] = useState('')
   const [sending, setSending] = useState(false)
   const [values, setValues] = useState({
@@ -42,7 +36,7 @@ export default function ContactForm() {
     email: '',
     organisation: '',
     role: '',
-    intent: params.get('intent') || '',
+    intent: initialIntent,
     stage: '',
     timeline: '',
     budget: '',
@@ -68,8 +62,13 @@ export default function ContactForm() {
     const res = await sendEnquiry(payload)
     setSending(false)
 
+    // send.php returns a specific reason for rate limits and server-side
+    // validation; show that in preference to the generic message.
     if (res.ok) navigate('/thank-you')
-    else setError('We could not send the message. Please email contact@irahsolution.com.')
+    else
+      setError(
+        res.error || 'We could not send the message. Please email contact@irahsolution.com.',
+      )
   }
 
   return (

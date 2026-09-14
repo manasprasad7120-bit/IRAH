@@ -10,7 +10,7 @@ export default function Platform() {
             A unified system for intelligent, trusted and observable software.
           </h1>
           <p>
-            IRAH Platform brings together experience design, AI/ML, Redis, blockchain, data
+            IRAH Platform brings together experience design, AI/ML, blockchain, data
             engineering, cloud and operations within one accountable delivery model.
           </p>
           <div className="actions">
@@ -39,7 +39,7 @@ export default function Platform() {
             </div>
             <div>
               <b>Performance layer</b>
-              <span>Redis caching, sessions, streams, queues and real-time state.</span>
+              <span>In-memory caching, sessions, streams, queues and real-time state.</span>
             </div>
             <div>
               <b>Trust layer</b>

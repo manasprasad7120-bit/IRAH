@@ -10,13 +10,12 @@ export default function Footer() {
             <span>IRAH Solution</span>
           </Link>
           <p>
-            Enterprise AI, blockchain, Redis and software platforms for governments, PSUs and
+            Enterprise AI, blockchain and software platforms for governments, PSUs and
             ambitious businesses.
           </p>
           <div className="trust-strip">
             <span>AI/ML</span>
             <span>Blockchain</span>
-            <span>Redis</span>
             <span>Growth</span>
           </div>
         </div>
@@ -26,7 +25,6 @@ export default function Footer() {
           <Link to="/services">Enterprise Software</Link>
           <Link to="/ai-ml">AI/ML Engineering</Link>
           <Link to="/blockchain">Blockchain</Link>
-          <Link to="/redis-government">Redis</Link>
         </div>
         <div>
           <h3>Solutions</h3>
@@ -56,7 +54,7 @@ export default function Footer() {
         <div>
           <h3>Engage</h3>
           <Link to="/solution-architect">Use Solution Architect</Link>
-          <Link to="/contact?intent=redis">Request Redis PoC</Link>
+          <Link to="/contact?intent=software">Discuss a software project</Link>
           <Link to="/contact?intent=ai">Discuss AI platform</Link>
           <Link to="/contact?intent=affiliate">Launch a campaign</Link>
           <Link to="/downloads">Download briefs</Link>

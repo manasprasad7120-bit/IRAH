@@ -6,17 +6,15 @@ import CapabilityShell from '../components/CapabilityShell'
 
 const SIGNAL_DELAYS = ['.2s', '.8s', '1.3s', '.5s', '1.7s', '1.1s', '.4s', '1.5s', '.9s', '1.9s', '.7s', '1.2s']
 
-const CLIENTS = [
-  ['amazon', 'Amazon logo'],
-  ['kreditbee', 'KreditBee logo'],
-  ['parimatch', 'Parimatch logo'],
-  ['groww', 'Groww logo'],
-  ['dominos', 'Domino’s logo'],
-  ['zee5', 'ZEE5 logo'],
-  ['myntra', 'Myntra logo'],
-  ['firstcry', 'FirstCry logo'],
-  ['astropay', 'AstroPay logo'],
-  ['getpsi', 'GetPSI logo'],
+const CATEGORIES = [
+  'E-commerce & marketplaces',
+  'Fintech & lending',
+  'Digital payments',
+  'Wealth & investing',
+  'OTT & entertainment',
+  'Online gaming',
+  'Consumer retail',
+  'Quick-service restaurants',
 ]
 
 const INDUSTRIES = [
@@ -47,7 +45,7 @@ export default function Home() {
               Operate with trust.
             </h1>
             <p className="hero-lead">
-              IRAH Solution designs enterprise software that combines AI/ML, blockchain, Redis and
+              IRAH Solution designs enterprise software that combines AI/ML, blockchain and
               cloud engineering for governments, PSUs and large organisations—supported by
               measurable delivery, operational ownership and accountable growth systems.
             </p>
@@ -67,8 +65,6 @@ export default function Home() {
             </div>
             <div className="metric-ticker">
               <span>AI</span>
-              <i />
-              <span>REDIS</span>
               <i />
               <span>BLOCKCHAIN</span>
               <i />
@@ -183,23 +179,18 @@ export default function Home() {
               <h3>Enterprise AI Platform</h3>
               <p>Document AI, RAG, vision, prediction, anomaly detection and MLOps.</p>
             </Link>
-            <Link to="/redis-government">
-              <span>03</span>
-              <h3>Redis Performance Platform</h3>
-              <p>Fast, resilient data services for high-volume applications.</p>
-            </Link>
             <Link to="/blockchain">
-              <span>04</span>
+              <span>03</span>
               <h3>Blockchain Trust Platform</h3>
               <p>Provenance, credentials, audit history and multi-party workflows.</p>
             </Link>
             <Link to="/products">
-              <span>05</span>
+              <span>04</span>
               <h3>Traceability Platform</h3>
               <p>Field apps, QR verification, lineage, analytics and recall controls.</p>
             </Link>
             <Link to="/affiliate-marketing">
-              <span>06</span>
+              <span>05</span>
               <h3>Affiliate Growth Platform</h3>
               <p>Attribution, partner operations, fraud controls and reconciliation.</p>
             </Link>
@@ -314,7 +305,7 @@ export default function Home() {
               </p>
             </article>
             <article className="demo-card">
-              <div className="demo-screen redis-demo">
+              <div className="demo-screen perf-demo">
                 <div className="latency-bars">
                   {['82%', '65%', '42%', '24%', '16%'].map((h) => (
                     <i key={h} style={{ '--h': h }} />
@@ -322,7 +313,7 @@ export default function Home() {
                 </div>
                 <div className="cache-pulse">CACHE HIT</div>
               </div>
-              <h3>Redis performance view</h3>
+              <h3>Application acceleration view</h3>
               <p>
                 Illustrative baseline and optimisation dashboard for latency, load and hit ratio.
               </p>
@@ -360,30 +351,25 @@ export default function Home() {
               <h2>Growth and technology experience across demanding categories.</h2>
             </div>
             <p>
-              Publish client references only where the relationship and brand permissions are
-              supportable.
+              Our teams have run performance and platform programmes in categories where volume,
+              compliance and unit economics are all under pressure at the same time.
             </p>
           </div>
-          <div className="client-marquee">
-            <div className="client-track">
-              {[...CLIENTS, ...CLIENTS].map(([slug, alt], i) => (
-                <div className="client-logo" key={`${slug}-${i}`}>
-                  <img src={`/assets/images/clients/${slug}.svg`} alt={alt} />
-                </div>
-              ))}
-            </div>
+          <div className="logo-wall">
+            {CATEGORIES.map((c) => (
+              <span key={c}>{c}</span>
+            ))}
           </div>
           <div className="logo-wall psu-wall">
-            <span>ITI Limited</span>
-            <span>TCIL</span>
             <span>State Governments</span>
             <span>Public Sector Undertakings</span>
+            <span>State IT Departments</span>
             <span>System Integrators</span>
+            <span>Implementation Agencies</span>
           </div>
           <p className="disclaimer">
-            Affiliate logos are presented as group portfolio references from One Engine Media Works.
-            PSU and government names describe customer segments and supplied experience; retain only
-            verified references in public deployment.
+            These describe the categories and types of organisation IRAH is built to serve. Named
+            client references are shared directly, on request, under NDA.
           </p>
         </div>
       </section>
@@ -397,14 +383,14 @@ export default function Home() {
             </div>
           </div>
           <div className="grid-2">
-            <Link className="case-teaser" to="/case-redis-government">
-              <span>REDIS / GOVERNMENT</span>
-              <h3>From baseline to production-ready performance</h3>
+            <Link className="case-teaser" to="/seed-traceability">
+              <span>AGRICULTURE / TRACEABILITY</span>
+              <h3>Lineage you can verify from breeder to farmer</h3>
               <p>
-                Workload selection, architecture, security, PoC gates, observability and scale
-                planning.
+                Lot genealogy, certification workflow, offline field capture, QR verification and
+                regulatory analytics.
               </p>
-              <b>Explore case framework →</b>
+              <b>Explore the platform →</b>
             </Link>
             <Link className="case-teaser" to="/case-affiliate-scale">
               <span>AFFILIATE / GROWTH</span>

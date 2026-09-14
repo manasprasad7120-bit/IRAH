@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 
 const BULLETS = [
   'AI/ML opportunity mapping',
-  'Redis performance architecture',
+  'Application acceleration architecture',
   'Blockchain or audit controls where justified',
   'Modular software and integration roadmap',
   'PoC success metrics and scale plan',
@@ -31,7 +31,7 @@ export default function Industries() {
           <span className="eyebrow">Industries</span>
           <h1 className="gradient">Technology patterns shaped around sector reality.</h1>
           <p>
-            Each industry page combines pain points, AI opportunities, Redis use cases, trust
+            Each industry page combines pain points, AI opportunities, performance needs, trust
             controls, software modules and measurable outcomes.
           </p>
           <div className="actions">

@@ -2,3 +2,7 @@ node_modules
 dist
 .env
 .env.local
+
+# Contact-form SMTP credentials - lives on the server only.
+# See mail-config.example.php for the template.
+mail-config.php

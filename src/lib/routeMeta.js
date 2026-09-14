@@ -4,7 +4,7 @@
 export const SITE_URL = 'https://irahsolution.com'
 
 export const DEFAULT_DESCRIPTION =
-  'IRAH Solution designs enterprise AI, blockchain, Redis and software platforms for governments, PSUs and growth-led businesses.'
+  'IRAH Solution designs enterprise AI, blockchain and software platforms for governments, PSUs and growth-led businesses.'
 
 // Ported from $videoMap in includes/header.php.
 export const videoMap = {
@@ -12,7 +12,6 @@ export const videoMap = {
   platform: 'irah-platform.mp4',
   ai: 'irah-ai.mp4',
   blockchain: 'irah-blockchain.mp4',
-  redis: 'irah-redis.mp4',
   affiliate: 'irah-affiliate.mp4',
   traceability: 'irah-traceability.mp4',
   contact: 'irah-contact.mp4',
@@ -23,7 +22,6 @@ export const videoMap = {
   labs: 'irah-labs.mp4',
   resources: 'irah-resources.mp4',
   careers: 'irah-careers.mp4',
-  'case-redis': 'irah-case-redis.mp4',
   'case-affiliate': 'irah-case-affiliate.mp4',
   architect: 'irah-platform.mp4',
   search: 'irah-resources.mp4',
@@ -32,15 +30,15 @@ export const videoMap = {
 export const routeMeta = {
   '/': {
     pageKey: 'home',
-    title: 'IRAH Solution | Enterprise AI, Blockchain, Redis & Software',
+    title: 'IRAH Solution | Enterprise AI, Blockchain & Software',
     description:
-      'Enterprise AI, blockchain, Redis and software platforms for governments, PSUs and growth-led businesses.',
+      'Enterprise AI, blockchain and software platforms for governments, PSUs and growth-led businesses.',
   },
   '/platform': {
     pageKey: 'platform',
     title: 'IRAH Platform | Enterprise Architecture',
     description:
-      'Unified enterprise architecture across AI, Redis, blockchain, software and operations.',
+      'Unified enterprise architecture across AI, blockchain, software and operations.',
   },
   '/services': {
     pageKey: 'software',
@@ -60,17 +58,11 @@ export const routeMeta = {
     description:
       'Permissioned blockchain, provenance, certificate verification, supply-chain traceability and tamper-evident registries.',
   },
-  '/redis-government': {
-    pageKey: 'redis',
-    title: 'Redis for India Government | IRAH Solution',
-    description:
-      'Redis PoCs, application acceleration, high availability and implementation support for India government platforms.',
-  },
   '/government-solutions': {
     pageKey: 'government',
     title: 'Government & PSU Technology Solutions | IRAH Solution',
     description:
-      'AI, blockchain, Redis and enterprise software solutions for state governments, PSUs and public institutions.',
+      'AI, blockchain and enterprise software solutions for state governments, PSUs and public institutions.',
   },
   '/industries': {
     pageKey: 'industries',
@@ -106,13 +98,7 @@ export const routeMeta = {
     pageKey: 'cases',
     title: 'Case Studies | IRAH Solution',
     description:
-      'Government, Redis, affiliate, AI and blockchain solution case studies and implementation blueprints.',
-  },
-  '/case-redis-government': {
-    pageKey: 'case-redis',
-    title: 'Redis for Government | Case Framework',
-    description:
-      'A detailed Redis government performance framework covering baseline, PoC, architecture, security, operations and scale.',
+      'Government, affiliate, AI and blockchain solution case studies and implementation blueprints.',
   },
   '/case-affiliate-scale': {
     pageKey: 'case-affiliate',
@@ -124,31 +110,31 @@ export const routeMeta = {
     pageKey: 'resources',
     title: 'Knowledge Hub | IRAH Solution',
     description:
-      'Practical resources on AI, Redis, blockchain, government platforms and growth systems.',
+      'Practical resources on AI, blockchain, government platforms and growth systems.',
   },
   '/blogs': {
     pageKey: 'blogs',
     title: 'Insights | IRAH Solution',
     description:
-      'Articles on Redis, AI/ML, blockchain, government software, traceability and affiliate growth.',
+      'Articles on AI/ML, blockchain, government software, traceability and affiliate growth.',
   },
   '/downloads': {
     pageKey: 'resources',
     title: 'Download Centre | IRAH Solution',
     description:
-      'Download IRAH capability briefs for AI, Redis, government platforms and affiliate growth.',
+      'Download IRAH capability briefs for AI, government platforms and affiliate growth.',
   },
   '/irah-labs': {
     pageKey: 'labs',
     title: 'IRAH Labs | Research & Prototypes',
     description:
-      'IRAH Labs explores AI agents, digital twins, Redis architectures and government accelerators.',
+      'IRAH Labs explores AI agents, digital twins, resilience architectures and government accelerators.',
   },
   '/careers': {
     pageKey: 'careers',
     title: 'Careers | IRAH Solution',
     description:
-      'Careers in enterprise AI, blockchain, Redis and software engineering at IRAH Solution.',
+      'Careers in enterprise AI, blockchain and software engineering at IRAH Solution.',
   },
   '/solution-architect': {
     pageKey: 'architect',
@@ -165,13 +151,13 @@ export const routeMeta = {
     pageKey: 'about',
     title: 'About IRAH Solution',
     description:
-      'IRAH Solution builds AI/ML, blockchain, Redis, enterprise software and performance growth systems.',
+      'IRAH Solution builds AI/ML, blockchain, enterprise software and performance growth systems.',
   },
   '/contact': {
     pageKey: 'contact',
     title: 'Contact IRAH Solution',
     description:
-      'Discuss enterprise software, AI, Redis, blockchain or affiliate growth with IRAH Solution.',
+      'Discuss enterprise software, AI, blockchain or affiliate growth with IRAH Solution.',
   },
   '/thank-you': {
     pageKey: 'contact',
@@ -188,12 +174,6 @@ export const routeMeta = {
     pageKey: 'legal',
     title: 'Terms of Use | IRAH Solution',
     description: 'Terms of use for the IRAH Solution website.',
-  },
-  '/post-redis-government-performance': {
-    pageKey: 'article',
-    title: 'Where Redis creates value in government applications | IRAH Solution',
-    description:
-      'Redis is most useful when matched to a specific workload rather than added as a generic speed layer.',
   },
   '/post-ai-counterfeit-detection': {
     pageKey: 'article',

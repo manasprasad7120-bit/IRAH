@@ -35,7 +35,7 @@ export default function SolutionArchitect() {
             </article>
             <article className="card">
               <h3>Reference stack</h3>
-              <p>Suggested software, AI, Redis, trust and operations layers.</p>
+              <p>Suggested software, AI, performance, trust and operations layers.</p>
             </article>
             <article className="card">
               <h3>Delivery path</h3>

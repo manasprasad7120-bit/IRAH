@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 
 const ITEMS = [
   ['Prototype', 'Government Knowledge Agent', 'Grounded multilingual assistant for circulars, schemes, policies and departmental knowledge.'],
-  ['Reference architecture', 'Redis Resilience Blueprint', 'Patterns for cache-aside, sessions, failover, observability and safe degradation.'],
+  ['Reference architecture', 'Resilience Blueprint', 'Patterns for cache-aside, sessions, failover, observability and safe degradation.'],
   ['Research initiative', 'Traceability Intelligence', 'Combining field evidence, anomaly models and signed provenance for high-risk supply chains.'],
   ['Prototype', 'Digital Twin Operations', 'Operational visualisation for assets, facilities and service systems.'],
   ['Reference implementation', 'Document AI Pipeline', 'OCR, classification, extraction, human review and searchable knowledge.'],

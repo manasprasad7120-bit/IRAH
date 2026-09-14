@@ -14,7 +14,7 @@ export default function SeedTraceability() {
               verification and risk analytics across the formal seed chain.
             </p>
             <div className="actions">
-              <Link className="btn btn-primary" to="/contact?intent=seed">
+              <Link className="btn btn-primary" to="/contact?intent=blockchain">
                 Discuss a pilot
               </Link>
             </div>

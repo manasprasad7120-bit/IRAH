@@ -34,7 +34,6 @@ export default function Header() {
               <Link to="/services">Enterprise Software</Link>
               <Link to="/ai-ml">AI/ML Engineering</Link>
               <Link to="/blockchain">Blockchain Platforms</Link>
-              <Link to="/redis-government">Redis Performance</Link>
             </div>
           </li>
           <li className="has-sub">

@@ -272,28 +272,29 @@ export default function CaseAffiliateScale() {
         <div className="container">
           <div className="section-head">
             <div>
-              <span className="eyebrow">Group portfolio experience</span>
+              <span className="eyebrow">Category experience</span>
               <h2>
                 Experience across fintech, commerce, entertainment and digital consumer categories.
               </h2>
             </div>
-            <p>Use logos only where presentation rights and the relationship are supportable.</p>
+            <p>
+              The controls above are drawn from running acquisition programmes in categories where
+              a conversion is only worth paying for once it has been validated downstream.
+            </p>
           </div>
           <div className="logo-wall">
-            <span>Amazon</span>
-            <span>KreditBee</span>
-            <span>Parimatch</span>
-            <span>Groww</span>
-            <span>Domino’s</span>
-            <span>ZEE5</span>
-            <span>Myntra</span>
-            <span>FirstCry</span>
-            <span>AstroPay</span>
-            <span>GetPSI</span>
+            <span>E-commerce &amp; marketplaces</span>
+            <span>Fintech &amp; lending</span>
+            <span>Digital payments</span>
+            <span>Wealth &amp; investing</span>
+            <span>OTT &amp; subscription</span>
+            <span>Online gaming</span>
+            <span>Consumer retail</span>
+            <span>Quick-service restaurants</span>
           </div>
           <p className="disclaimer">
-            Portfolio references are adapted from One Engine Media Works as group experience. Public
-            use should accurately describe the relationship and retain evidence of permission.
+            Named advertiser references, campaign periods and verified outcome figures are shared
+            directly, on request, under NDA.
           </p>
         </div>
       </section>

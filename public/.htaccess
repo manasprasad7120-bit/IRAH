@@ -1,0 +1,82 @@
+# IRAH Solution - Apache/LiteSpeed config for the React single-page app.
+#
+# Vite copies everything in public/ to the root of dist/, so this file ends up
+# as public_html/.htaccess on Hostinger. Do not move it into dist/ by hand.
+
+# ---------------------------------------------------------------------------
+# SPA routing
+# ---------------------------------------------------------------------------
+# React Router owns the URLs. Without this, a visitor who opens
+# https://<domain>/redis-government directly (or refreshes it) gets a hard 404
+# from Apache, because no such file exists on disk.
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # Anything that really exists is served as-is: /assets/*, /sitemap.xml,
+  # /robots.txt, the PDF briefs, and this file.
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+
+  # Everything else is a client-side route. Hand over the SPA shell and let
+  # React decide - including the /about.php style redirects in CatchAll.jsx.
+  RewriteRule ^ index.html [L]
+</IfModule>
+
+# ---------------------------------------------------------------------------
+# Caching
+# ---------------------------------------------------------------------------
+# index.html must never be cached. It is the only file that names the current
+# hashed bundle, so a stale copy pins visitors to an old deploy.
+<Files "index.html">
+  <IfModule mod_headers.c>
+    Header set Cache-Control "no-cache, no-store, must-revalidate"
+  </IfModule>
+</Files>
+
+# Media and PDFs are safe to cache for a while.
+#
+# NOTE: js/css are deliberately NOT cached hard here. Vite's own output is
+# content-hashed and would be safe, but /assets/css/styles.css comes from
+# public/ with a stable filename - a long max-age on it would leave visitors
+# on old styling after a deploy.
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType video/mp4        "access plus 1 month"
+  ExpiresByType image/png        "access plus 1 month"
+  ExpiresByType image/jpeg       "access plus 1 month"
+  ExpiresByType image/svg+xml    "access plus 1 month"
+  ExpiresByType application/pdf  "access plus 1 month"
+  ExpiresByType text/css         "access plus 1 hour"
+  ExpiresByType application/javascript "access plus 1 hour"
+</IfModule>
+
+# ---------------------------------------------------------------------------
+# Compression
+# ---------------------------------------------------------------------------
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css text/plain text/xml
+  AddOutputFilterByType DEFLATE application/javascript application/json
+  AddOutputFilterByType DEFLATE image/svg+xml
+</IfModule>
+
+# ---------------------------------------------------------------------------
+# Hardening
+# ---------------------------------------------------------------------------
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options "nosniff"
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+  Header set X-Frame-Options "SAMEORIGIN"
+</IfModule>
+
+# Don't hand out a directory listing if an index file is ever missing.
+Options -Indexes
+
+# Block access to anything that should never have been uploaded.
+# mail-config.php is included for defence in depth - PHP files are executed
+# rather than served, so its contents are not exposed either way, but it should
+# never be fetchable at all.
+<FilesMatch "^\.(env|git|gitignore)|^mail-config\.php$|\.(env\..*|log|sql|bak)$">
+  Require all denied
+</FilesMatch>

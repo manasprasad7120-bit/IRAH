@@ -1,5 +1,6 @@
 import { useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
+import { normaliseIntent } from '../lib/intents'
 
 const STAGES = [
   {
@@ -46,6 +47,22 @@ const STAGES = [
   },
 ]
 
+// Step-2 answers are display values, not contact-form intents, so map across
+// rather than passing "Performance"/"AI" straight into the URL. normaliseIntent
+// keeps a typo here from reaching the form as an unmatched value.
+const INTENT_BY_NEED = {
+  Performance: 'software',
+  AI: 'ai',
+  Trust: 'blockchain',
+  Portal: 'software',
+  Growth: 'affiliate',
+}
+
+function intentFor(need, org) {
+  const fallback = org === 'Government' || org === 'PSU' ? 'government' : 'other'
+  return normaliseIntent(INTENT_BY_NEED[need]) || fallback
+}
+
 // Recommendation logic, ported from showResult() in assets/js/app.js.
 function recommend(answers) {
   const [org, need, constraint, outcome] = answers
@@ -55,10 +72,10 @@ function recommend(answers) {
   let stack = ['Product discovery', 'Enterprise architecture', 'Security', 'Delivery governance']
 
   if (need === 'Performance') {
-    title = 'Redis performance PoC'
+    title = 'Application acceleration PoC'
     copy =
-      'Baseline one high-impact workload, design a safe Redis pattern, test resilience and measure latency plus database-load improvement before scale.'
-    stack = ['Redis', 'Observability', 'API integration', 'Failover testing']
+      'Baseline one high-impact workload, design a safe in-memory caching pattern, test resilience and measure latency plus database-load improvement before scale.'
+    stack = ['In-memory caching', 'Observability', 'API integration', 'Failover testing']
   } else if (need === 'AI') {
     title = 'Governed AI platform pilot'
     copy =
@@ -84,7 +101,8 @@ function recommend(answers) {
   return {
     title,
     stack,
-    intent: need || 'platform',
+    // No specific need selected falls back to the org type, then to "Other".
+    intent: intentFor(need, org),
     body: `For ${org || 'your organisation'}, prioritise ${
       constraint || 'operating constraints'
     } and begin with a ${outcome || 'measured first stage'}. ${copy}`,
@@ -152,7 +170,7 @@ export default function ArchitectWizard() {
           <Link
             className="btn btn-primary"
             id="resultContact"
-            to={`/contact?intent=${encodeURIComponent(result ? result.intent : 'platform')}`}
+            to={`/contact?intent=${encodeURIComponent(result ? result.intent : 'other')}`}
           >
             Discuss this solution
           </Link>
