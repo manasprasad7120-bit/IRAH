@@ -43,6 +43,10 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           protocol: ftps
+          # Default is 30s. Hostinger's shared FTP can be slow to answer,
+          # especially after several connections in quick succession, which
+          # trips their brute-force protection and stalls the control socket.
+          timeout: 60000
           # Trailing slashes matter to this action.
           local-dir: ./dist/
           # The hosting plan is registered to irahsolution.in, so bare
