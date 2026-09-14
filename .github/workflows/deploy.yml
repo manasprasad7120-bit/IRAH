@@ -49,12 +49,13 @@ jobs:
           timeout: 60000
           # Trailing slashes matter to this action.
           local-dir: ./dist/
-          # The hosting plan is registered to irahsolution.in, so bare
-          # public_html/ is the .IN document root. irahsolution.com is an addon
-          # domain served from its own folder, which is the one we want.
-          # Confirm against File Manager: whichever directory contains the site
-          # is the correct value here.
-          server-dir: domains/irahsolution.com/public_html/
+          # irahsolution.com is the PRIMARY domain on this plan, so its document
+          # root is the home directory's public_html. hPanel's File Manager
+          # breadcrumb reads "home > ... > irahsolution.com > public_html",
+          # which looks like nested folders but is just a navigational label -
+          # deploying to domains/irahsolution.com/public_html/ created a real
+          # folder that nothing serves.
+          server-dir: public_html/
           # TEMPORARY - set back to false after the next successful run.
           #
           # The action tracks server state in .ftp-deploy-sync-state.json. That
