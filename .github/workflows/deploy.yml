@@ -60,19 +60,16 @@ jobs:
           # public_html/domains/... Both uploaded fine and neither was served.
           # The leading slash anchors the path to the FTP root instead.
           server-dir: /domains/irahsolution.com/public_html/
-          # TEMPORARY - set back to false after the next successful run.
+          # Keep this false. The action uploads only what changed and leaves
+          # everything else alone, which is what we want - with it set to true a
+          # deploy deletes anything in the document root that is not in the
+          # repo, including files you upload by hand.
           #
-          # The action tracks server state in .ftp-deploy-sync-state.json. That
-          # file survived a manual wipe of public_html (File Manager hides
-          # dotfiles), so the action believed all 32 files were still present
-          # and uploaded nothing. This forces a full publish, ignoring the
-          # stale manifest.
-          #
-          # Safe right now only because the target folder is empty. Revert it:
-          # with it set to true, a later deploy would delete anything in
-          # public_html that is not in the repo - including mail-config.php if
-          # it is ever placed there.
-          dangerous-clean-slate: true
+          # It was switched on for one run to force a full republish after a
+          # stale .ftp-deploy-sync-state.json made the action think the server
+          # was already in sync. If that ever happens again, delete that file on
+          # the server rather than turning this back on.
+          dangerous-clean-slate: false
           exclude: |
             **/.git*
             **/.git*/**
