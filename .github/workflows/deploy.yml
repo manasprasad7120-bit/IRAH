@@ -55,10 +55,19 @@ jobs:
           # Confirm against File Manager: whichever directory contains the site
           # is the correct value here.
           server-dir: domains/irahsolution.com/public_html/
-          # The action keeps a manifest on the server and uploads only what
-          # changed. Set this to true for ONE run if you need to wipe the old
-          # PHP site, then set it back to false.
-          dangerous-clean-slate: false
+          # TEMPORARY - set back to false after the next successful run.
+          #
+          # The action tracks server state in .ftp-deploy-sync-state.json. That
+          # file survived a manual wipe of public_html (File Manager hides
+          # dotfiles), so the action believed all 32 files were still present
+          # and uploaded nothing. This forces a full publish, ignoring the
+          # stale manifest.
+          #
+          # Safe right now only because the target folder is empty. Revert it:
+          # with it set to true, a later deploy would delete anything in
+          # public_html that is not in the repo - including mail-config.php if
+          # it is ever placed there.
+          dangerous-clean-slate: true
           exclude: |
             **/.git*
             **/.git*/**
