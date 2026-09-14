@@ -45,7 +45,12 @@ jobs:
           protocol: ftps
           # Trailing slashes matter to this action.
           local-dir: ./dist/
-          server-dir: public_html/
+          # The hosting plan is registered to irahsolution.in, so bare
+          # public_html/ is the .IN document root. irahsolution.com is an addon
+          # domain served from its own folder, which is the one we want.
+          # Confirm against File Manager: whichever directory contains the site
+          # is the correct value here.
+          server-dir: domains/irahsolution.com/public_html/
           # The action keeps a manifest on the server and uploads only what
           # changed. Set this to true for ONE run if you need to wipe the old
           # PHP site, then set it back to false.

@@ -4,6 +4,15 @@
 # as public_html/.htaccess on Hostinger. Do not move it into dist/ by hand.
 
 # ---------------------------------------------------------------------------
+# Index precedence
+# ---------------------------------------------------------------------------
+# Hostinger's default DirectoryIndex lists index.php before index.html (it is
+# tuned for WordPress). While any leftover index.php is still in public_html, a
+# request for "/" would serve the OLD PHP homepage even after this build lands.
+# Naming index.html first removes that ambiguity.
+DirectoryIndex index.html index.php
+
+# ---------------------------------------------------------------------------
 # SPA routing
 # ---------------------------------------------------------------------------
 # React Router owns the URLs. Without this, a visitor who opens
