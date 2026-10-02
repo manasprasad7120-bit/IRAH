@@ -58,7 +58,12 @@ export const routeMeta = {
     description:
       'Permissioned blockchain, provenance, certificate verification, supply-chain traceability and tamper-evident registries.',
   },
-  '/redis-government': {\n    pageKey: 'redis',\n    title: 'Redis for Government Platforms | IRAH Solution',\n    description: 'Redis application caching, session management, rate limiting, workload acceleration and resilient proof-of-concept support for government and PSU platforms.',\n  },\n  '/government-solutions': {
+  '/redis-government': {\n    pageKey: 'redis',\n    title: 'Redis for Government Platforms | IRAH Solution',\n    description: 'Redis application caching, session management, rate limiting, workload acceleration and resilient proof-of-concept support for government and PSU platforms.',\n  },\n  '/redis-government': {
+    pageKey: 'redis',
+    title: 'Redis for Government Platforms | IRAH Solution',
+    description: 'Redis application caching, session management, rate limiting, workload acceleration and resilient proof-of-concept support for government and PSU platforms.',
+  },
+  '/government-solutions': {
     pageKey: 'government',
     title: 'Government & PSU Technology Solutions | IRAH Solution',
     description:
