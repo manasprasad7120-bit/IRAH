@@ -174,23 +174,28 @@ export default function Home() {
               <h3>Government Platform</h3>
               <p>Citizen services, departmental workflows, command views and field operations.</p>
             </Link>
-            <Link to="/ai-ml">
+            <Link to="/redis-government">
               <span>02</span>
+              <h3>Redis Performance Platform</h3>
+              <p>Low-latency caching, session state, rate limiting and application acceleration.</p>
+            </Link>
+            <Link to="/ai-ml">
+              <span>03</span>
               <h3>Enterprise AI Platform</h3>
               <p>Document AI, RAG, vision, prediction, anomaly detection and MLOps.</p>
             </Link>
             <Link to="/blockchain">
-              <span>03</span>
+              <span>04</span>
               <h3>Blockchain Trust Platform</h3>
               <p>Provenance, credentials, audit history and multi-party workflows.</p>
             </Link>
             <Link to="/products">
-              <span>04</span>
+              <span>05</span>
               <h3>Traceability Platform</h3>
               <p>Field apps, QR verification, lineage, analytics and recall controls.</p>
             </Link>
             <Link to="/affiliate-marketing">
-              <span>05</span>
+              <span>06</span>
               <h3>Affiliate Growth Platform</h3>
               <p>Attribution, partner operations, fraud controls and reconciliation.</p>
             </Link>
@@ -392,7 +397,13 @@ export default function Home() {
               </p>
               <b>Explore the platform →</b>
             </Link>
-            <Link className="case-teaser" to="/redis-government">\n              <span>GOVERNMENT / PERFORMANCE</span>\n              <h3>Accelerate high-traffic public services with Redis</h3>\n              <p>Workload discovery, measured PoCs, cache strategy, resilience and production-readiness controls.</p>\n              <b>Explore Redis approach →</b>\n            </Link>\n            <Link className="case-teaser" to="/case-affiliate-scale">
+            <Link className="case-teaser" to="/redis-government">\n              <span>GOVERNMENT / PERFORMANCE</span>\n              <h3>Accelerate high-traffic public services with Redis</h3>\n              <p>Workload discovery, measured PoCs, cache strategy, resilience and production-readiness controls.</p>\n              <b>Explore Redis approach →</b>\n            </Link>\n            <Link className="case-teaser" to="/redis-government">
+              <span>GOVERNMENT / PERFORMANCE</span>
+              <h3>Accelerate high-traffic public services with Redis</h3>
+              <p>Workload discovery, measured PoCs, cache strategy, resilience and production-readiness controls.</p>
+              <b>Explore Redis approach →</b>
+            </Link>
+            <Link className="case-teaser" to="/case-affiliate-scale">
               <span>AFFILIATE / GROWTH</span>
               <h3>Attribution, partner quality and commercial control</h3>
               <p>
