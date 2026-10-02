@@ -392,7 +392,7 @@ export default function Home() {
               </p>
               <b>Explore the platform →</b>
             </Link>
-            <Link className="case-teaser" to="/case-affiliate-scale">
+            <Link className="case-teaser" to="/redis-government">\n              <span>GOVERNMENT / PERFORMANCE</span>\n              <h3>Accelerate high-traffic public services with Redis</h3>\n              <p>Workload discovery, measured PoCs, cache strategy, resilience and production-readiness controls.</p>\n              <b>Explore Redis approach →</b>\n            </Link>\n            <Link className="case-teaser" to="/case-affiliate-scale">
               <span>AFFILIATE / GROWTH</span>
               <h3>Attribution, partner quality and commercial control</h3>
               <p>
