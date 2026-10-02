@@ -21,6 +21,7 @@ import Post from './pages/Post'
 import PrivacyPolicy from './pages/PrivacyPolicy'
 import Products from './pages/Products'
 import Resources from './pages/Resources'
+import RedisGovernment from './pages/RedisGovernment'
 import Search from './pages/Search'
 import SeedTraceability from './pages/SeedTraceability'
 import Services from './pages/Services'
@@ -39,6 +40,7 @@ export default function App() {
         <Route path="/ai-ml" element={<AiMl />} />
         <Route path="/blockchain" element={<Blockchain />} />
         <Route path="/government-solutions" element={<GovernmentSolutions />} />
+        <Route path="/redis-government" element={<RedisGovernment />} />
         <Route path="/industries" element={<Industries />} />
         <Route path="/affiliate-marketing" element={<AffiliateMarketing />} />
         <Route path="/products" element={<Products />} />

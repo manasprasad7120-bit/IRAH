@@ -16,7 +16,7 @@ export const videoMap = {
   traceability: 'irah-traceability.mp4',
   contact: 'irah-contact.mp4',
   government: 'irah-government.mp4',
-  services: 'irah-ai.mp4',
+  services: 'irah-ai.mp4',\n  redis: 'irah-platform.mp4',
   products: 'irah-traceability.mp4',
   industries: 'irah-industries.mp4',
   labs: 'irah-labs.mp4',
@@ -57,6 +57,11 @@ export const routeMeta = {
     title: 'Blockchain Platforms & Traceability | IRAH Solution',
     description:
       'Permissioned blockchain, provenance, certificate verification, supply-chain traceability and tamper-evident registries.',
+  },
+  '/redis-government': {\n    pageKey: 'redis',\n    title: 'Redis for Government Platforms | IRAH Solution',\n    description: 'Redis application caching, session management, rate limiting, workload acceleration and resilient proof-of-concept support for government and PSU platforms.',\n  },\n  '/redis-government': {
+    pageKey: 'redis',
+    title: 'Redis for Government Platforms | IRAH Solution',
+    description: 'Redis application caching, session management, rate limiting, workload acceleration and resilient proof-of-concept support for government and PSU platforms.',
   },
   '/government-solutions': {
     pageKey: 'government',
