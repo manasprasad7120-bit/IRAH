@@ -38,78 +38,36 @@ export default function Home() {
       <section className="hero hero-xl">
         <div className="container hero-grid">
           <div className="hero-copy">
-            <span className="eyebrow">Enterprise technology for public impact</span>
-            <h1 className="gradient">
-              Build intelligent platforms.
-              <br />
-              Operate with trust.
-            </h1>
+            <span className="eyebrow">IRAH · Enterprise Agentic AI Engineering</span>
+            <h1 className="gradient">Build AI systems that move enterprise work forward.</h1>
             <p className="hero-lead">
-              IRAH Solution designs enterprise software that combines AI/ML, blockchain and
-              cloud engineering for governments, PSUs and large organisations—supported by
-              measurable delivery, operational ownership and accountable growth systems.
+              IRAH designs, builds and deploys enterprise AI solutions—from coordinated agents and
+              workflow automation to secure integrations, observability and production operations.
+              We connect AI to the systems your teams already rely on.
             </p>
             <div className="actions">
-              <Link className="btn btn-primary" to="/solution-architect">
-                Design your solution
-              </Link>
-              <Link className="btn btn-secondary" to="/platform">
-                Explore the platform
-              </Link>
+              <Link className="btn btn-primary" to="/contact">Discuss an enterprise use case</Link>
+              <Link className="btn btn-secondary" to="/agentic-ai">Explore Agentic AI</Link>
+            </div>
+            <div className="trust-strip">
+              <span>Multi-agent systems</span>
+              <span>Enterprise integrations</span>
+              <span>Governance &amp; observability</span>
             </div>
           </div>
-          <div className="hero-console command-center phase9-console">
-            <div className="console-head">
-              <span>IRAH / ENTERPRISE COMMAND</span>
-              <b>ACTIVE</b>
+          <div className="agentic-visual home-agentic-visual">
+            <div className="agentic-visual-head"><span>ENTERPRISE AI SYSTEM</span><b>DESIGNED TO OPERATE</b></div>
+            <div className="agentic-node agentic-request"><small>BUSINESS INPUT</small><strong>Goals · Data · Workflow</strong><span>Understand the task and constraints</span></div>
+            <div className="agentic-connector">↓</div>
+            <div className="agentic-node agentic-orchestrator"><small>COORDINATION</small><strong>Agent orchestration layer</strong><span>Plan · Route · Track · Validate</span></div>
+            <div className="agentic-branches">
+              <div className="agentic-node"><strong>Knowledge</strong><span>Approved sources</span></div>
+              <div className="agentic-node"><strong>Actions</strong><span>Connected tools</span></div>
+              <div className="agentic-node"><strong>Review</strong><span>Human oversight</span></div>
             </div>
-            <div className="metric-ticker">
-              <span>AI</span>
-              <i />
-              <span>BLOCKCHAIN</span>
-              <i />
-              <span>SOFTWARE</span>
-              <i />
-              <span>OPERATIONS</span>
-            </div>
-            <div className="live-grid live-grid-6">
-              <div>
-                <small>PLATFORM LAYERS</small>
-                <strong data-counter="7">0</strong>
-                <i>integrated</i>
-              </div>
-              <div>
-                <small>DELIVERY GATES</small>
-                <strong data-counter="8">0</strong>
-                <i>controlled</i>
-              </div>
-              <div>
-                <small>INDUSTRIES</small>
-                <strong data-counter="12">0</strong>
-                <i>solution patterns</i>
-              </div>
-              <div>
-                <small>TRUST MODEL</small>
-                <strong>Zero → Scale</strong>
-                <i>measured path</i>
-              </div>
-              <div>
-                <small>OPERATING VIEW</small>
-                <strong>24×7</strong>
-                <i>observable</i>
-              </div>
-              <div>
-                <small>ENGAGEMENT</small>
-                <strong>PoC → Run</strong>
-                <i>end to end</i>
-              </div>
-            </div>
-            <div className="signal-grid" id="signalGrid">
-              {SIGNAL_DELAYS.map((d, i) => (
-                <span key={i} style={{ '--d': d }} />
-              ))}
-            </div>
-            <CapabilityShell />
+            <div className="agentic-connector">↓</div>
+            <div className="agentic-node agentic-operations"><strong>Enterprise operations</strong><span>Security · Traces · Evaluation · Monitoring</span></div>
+            <p className="agentic-caption">Illustrative architecture · Tailored to each workflow and risk profile</p>
           </div>
         </div>
       </section>
@@ -164,11 +122,21 @@ export default function Home() {
         <div className="container">
           <div className="section-head">
             <div>
-              <span className="eyebrow">Our platforms</span>
-              <h2>Focused systems, not generic service lists.</h2>
+              <span className="eyebrow">Enterprise solutions</span>
+              <h2>From intelligent workflows to dependable production systems.</h2>
             </div>
           </div>
           <div className="platform-showcase">
+            <Link to="/agentic-ai">
+              <span>01</span>
+              <h3>Agentic AI Systems</h3>
+              <p>Multi-agent orchestration, enterprise tools, governed workflows and evaluation.</p>
+            </Link>
+            <Link to="/case-agentic-sdlc">
+              <span>02</span>
+              <h3>Agentic SDLC Platform</h3>
+              <p>Coordinate requirements, design, development, testing, deployment and monitoring.</p>
+            </Link>
             <Link to="/government-solutions">
               <span>01</span>
               <h3>Government Platform</h3>
@@ -388,6 +356,12 @@ export default function Home() {
             </div>
           </div>
           <div className="grid-2">
+            <Link className="case-teaser" to="/case-agentic-sdlc">
+              <span>AGENTIC AI / SOFTWARE DELIVERY</span>
+              <h3>Coordinate the software delivery lifecycle with specialist agents</h3>
+              <p>Explore an orchestration pattern for requirements, design, development, testing, deployment and monitoring.</p>
+              <b>Explore the SDLC platform →</b>
+            </Link>
             <Link className="case-teaser" to="/seed-traceability">
               <span>AGRICULTURE / TRACEABILITY</span>
               <h3>Lineage you can verify from breeder to farmer</h3>
