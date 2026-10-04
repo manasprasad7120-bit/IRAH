@@ -38,17 +38,18 @@ export default function Home() {
             <span className="eyebrow">IRAH · Enterprise Agentic AI Engineering</span>
             <h1 className="gradient">Build AI systems that move enterprise work forward.</h1>
             <p className="hero-lead">
-              IRAH designs, builds and deploys enterprise AI solutions—from coordinated agents and
-              workflow automation to secure integrations, observability and production operations.
-              We connect AI to the systems your teams already rely on.
+              IRAH designs, builds and deploys enterprise AI and technology solutions for businesses,
+              governments and PSUs—from coordinated agents and workflow automation to citizen-service
+              platforms, secure integrations, observability and production operations.
             </p>
             <div className="actions">
               <Link className="btn btn-primary" to="/contact">Discuss an enterprise use case</Link>
               <Link className="btn btn-secondary" to="/agentic-ai">Explore Agentic AI</Link>
+              <Link className="btn btn-secondary" to="/government-solutions">Government &amp; PSU solutions</Link>
             </div>
             <div className="trust-strip">
               <span>Multi-agent systems</span>
-              <span>Enterprise integrations</span>
+              <span>Government &amp; PSU programmes</span>
               <span>Governance &amp; observability</span>
             </div>
           </div>
@@ -65,6 +66,28 @@ export default function Home() {
             <div className="agentic-connector">↓</div>
             <div className="agentic-node agentic-operations"><strong>Enterprise operations</strong><span>Security · Traces · Evaluation · Monitoring</span></div>
             <p className="agentic-caption">Illustrative architecture · Tailored to each workflow and risk profile</p>
+          </div>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="container split-panel">
+          <div>
+            <span className="eyebrow">Government &amp; PSU solutions</span>
+            <h2>Technology built for public delivery, accountability and scale.</h2>
+            <p>
+              Support citizen services, departmental workflows, field operations, command views and
+              legacy modernisation—with a delivery approach shaped around public-sector requirements.
+            </p>
+            <div className="actions">
+              <Link className="btn btn-primary" to="/government-solutions">Explore Government &amp; PSU solutions</Link>
+              <Link className="btn btn-secondary" to="/contact">Discuss a government project</Link>
+            </div>
+          </div>
+          <div className="check-list">
+            <p><strong>Citizen services</strong><br />Portals, applications, status tracking and grievance workflows.</p>
+            <p><strong>Department and field operations</strong><br />Data capture, case coordination, monitoring and exception handling.</p>
+            <p><strong>Modernisation and integration</strong><br />APIs, legacy systems, analytics, performance and operational support.</p>
           </div>
         </div>
       </section>
@@ -349,7 +372,7 @@ export default function Home() {
           <div className="section-head">
             <div>
               <span className="eyebrow">Featured work</span>
-              <h2>Detailed frameworks for performance and accountable growth.</h2>
+              <h2>Public-sector delivery and enterprise engineering in practice.</h2>
             </div>
           </div>
           <div className="grid-2">
