@@ -1,6 +1,7 @@
 import { Route, Routes } from 'react-router-dom'
 import Layout from './components/Layout'
 import About from './pages/About'
+import AgenticAI from './pages/AgenticAI'
 import AffiliateMarketing from './pages/AffiliateMarketing'
 import AiMl from './pages/AiMl'
 import BharatFoodAssure from './pages/BharatFoodAssure'
@@ -9,6 +10,7 @@ import Blogs from './pages/Blogs'
 import Careers from './pages/Careers'
 import CaseAffiliateScale from './pages/CaseAffiliateScale'
 import CaseStudies from './pages/CaseStudies'
+import CaseAgenticSDLC from './pages/CaseAgenticSDLC'
 import CatchAll from './pages/CatchAll'
 import Contact from './pages/Contact'
 import Downloads from './pages/Downloads'
@@ -38,6 +40,7 @@ export default function App() {
         <Route path="/platform" element={<Platform />} />
         <Route path="/services" element={<Services />} />
         <Route path="/ai-ml" element={<AiMl />} />
+        <Route path="/agentic-ai" element={<AgenticAI />} />
         <Route path="/blockchain" element={<Blockchain />} />
         <Route path="/government-solutions" element={<GovernmentSolutions />} />
         <Route path="/redis-government" element={<RedisGovernment />} />
@@ -47,6 +50,7 @@ export default function App() {
         <Route path="/bharat-food-assure" element={<BharatFoodAssure />} />
         <Route path="/seed-traceability" element={<SeedTraceability />} />
         <Route path="/case-studies" element={<CaseStudies />} />
+        <Route path="/case-agentic-sdlc" element={<CaseAgenticSDLC />} />
         <Route path="/case-affiliate-scale" element={<CaseAffiliateScale />} />
         <Route path="/resources" element={<Resources />} />
         <Route path="/blogs" element={<Blogs />} />
