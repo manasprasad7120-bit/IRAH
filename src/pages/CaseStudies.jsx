@@ -26,7 +26,7 @@ export default function CaseStudies() {
       <section className="section">
         <div className="container">
           <div className="grid-2">
-            <Link className="card" to="/redis-government">\n              <span className="card-no">GOVERNMENT / PERFORMANCE</span>\n              <h3>Redis for government platforms</h3>\n              <p>Application caching, session management, rate limiting, workload baselines and resilient implementation planning.</p>\n            </Link>\n            <Link className="card" to="/redis-government">
+            <Link className="card" to="/redis-government">
               <span className="card-no">GOVERNMENT / PERFORMANCE</span>
               <h3>Redis for government platforms</h3>
               <p>Application caching, session management, rate limiting, workload baselines and resilient implementation planning.</p>
