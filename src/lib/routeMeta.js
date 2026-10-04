@@ -33,7 +33,7 @@ export const routeMeta = {
     pageKey: 'home',
     title: 'IRAH Solution | Enterprise AI, Blockchain & Software',
     description:
-      'Enterprise AI, blockchain and software platforms for governments, PSUs and growth-led businesses.',
+      'Enterprise Agentic AI systems, workflow automation and production engineering for governments, PSUs and businesses.',
   },
   '/platform': {
     pageKey: 'platform',
@@ -47,7 +47,7 @@ export const routeMeta = {
     description:
       'Custom software, web and mobile apps, APIs, data engineering, cloud, DevOps and application modernisation.',
   },
-  '/ai-ml': {
+  '/agentic-ai': {\n    pageKey: 'ai',\n    title: 'Enterprise Agentic AI Systems & Automation | IRAH Solution',\n    description: 'Design and engineering for multi-agent systems, enterprise workflow automation, tool integrations, governance, evaluation and production operations.',\n  },\n  '/ai-ml': {
     pageKey: 'ai',
     title: 'AI/ML Engineering for Government & Enterprise | IRAH Solution',
     description:
@@ -100,7 +100,7 @@ export const routeMeta = {
     description:
       'AI and blockchain seed lineage, certification, distribution and farmer verification platform.',
   },
-  '/case-studies': {
+  '/case-agentic-sdlc': {\n    pageKey: 'cases',\n    title: 'Agentic SDLC Platform | IRAH Solution',\n    description: 'An agentic software delivery workflow coordinating specialist agents across requirements, design, development, testing, deployment and monitoring.',\n  },\n  '/case-studies': {
     pageKey: 'cases',
     title: 'Case Studies | IRAH Solution',
     description:
