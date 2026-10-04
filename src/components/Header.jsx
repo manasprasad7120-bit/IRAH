@@ -38,6 +38,9 @@ export default function Header() {
               <Link to="/government-solutions">Government &amp; PSU</Link>
             </div>
           </li>
+          <li>
+            <Link to="/government-solutions">Government &amp; PSU</Link>
+          </li>
           <li className="has-sub">
             <Link to="/industries">Industries</Link>
             <div className="sub-menu">
