@@ -28,7 +28,7 @@ const INDUSTRIES = [
   ['manufacturing', 'Manufacturing'],
   ['logistics', 'Logistics'],
   ['public-safety', 'Public Safety'],
-  ['judiciary', 'Judiciary'],
+  ['agentic-ai', 'Agentic AI & Automation'],
   ['retail', 'Retail'],
 ]
 
@@ -397,7 +397,7 @@ export default function Home() {
               </p>
               <b>Explore the platform →</b>
             </Link>
-            <Link className="case-teaser" to="/redis-government">\n              <span>GOVERNMENT / PERFORMANCE</span>\n              <h3>Accelerate high-traffic public services with Redis</h3>\n              <p>Workload discovery, measured PoCs, cache strategy, resilience and production-readiness controls.</p>\n              <b>Explore Redis approach →</b>\n            </Link>\n            <Link className="case-teaser" to="/redis-government">
+            <Link className="case-teaser" to="/redis-government">
               <span>GOVERNMENT / PERFORMANCE</span>
               <h3>Accelerate high-traffic public services with Redis</h3>
               <p>Workload discovery, measured PoCs, cache strategy, resilience and production-readiness controls.</p>
