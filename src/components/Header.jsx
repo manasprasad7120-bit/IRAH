@@ -35,7 +35,6 @@ export default function Header() {
               <Link to="/case-agentic-sdlc">Agentic SDLC Platform</Link>
               <Link to="/ai-ml">AI Engineering</Link>
               <Link to="/services">Enterprise Software</Link>
-              <Link to="/government-solutions">Government &amp; PSU</Link>
             </div>
           </li>
           <li>
