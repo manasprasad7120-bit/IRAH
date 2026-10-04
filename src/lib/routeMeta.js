@@ -4,7 +4,7 @@
 export const SITE_URL = 'https://irahsolution.com'
 
 export const DEFAULT_DESCRIPTION =
-  'IRAH Solution designs enterprise AI, blockchain and software platforms for governments, PSUs and growth-led businesses.'
+  'IRAH Solution engineers enterprise Agentic AI systems, workflow automation and production software for governments, PSUs and businesses.'
 
 // Ported from $videoMap in includes/header.php.
 export const videoMap = {
@@ -31,7 +31,7 @@ export const videoMap = {
 export const routeMeta = {
   '/': {
     pageKey: 'home',
-    title: 'IRAH Solution | Enterprise AI, Blockchain & Software',
+    title: 'IRAH Solution | Enterprise Agentic AI & Automation',
     description:
       'Enterprise Agentic AI systems, workflow automation and production engineering for governments, PSUs and businesses.',
   },
