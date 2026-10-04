@@ -19,7 +19,7 @@ const SECTORS = [
   ['manufacturing', 'Manufacturing', 'Manufacturing', 'Quality, traceability, maintenance, warehouse, supplier and production intelligence.'],
   ['logistics', 'Logistics', 'Logistics', 'Fleet, route, warehouse, proof-of-delivery and control-tower systems.'],
   ['public-safety', 'Public Safety', 'Public Safety', 'Emergency response, command, incident workflows, evidence and operational dashboards.'],
-  ['judiciary', 'Judiciary', 'Judiciary', 'Case workflows, document intelligence, scheduling, search and citizen access.'],
+  ['agentic-ai', 'Agentic AI & Automation', 'Agentic AI & Automation', 'Multi-agent workflows, tool orchestration, enterprise process automation, human-in-the-loop approvals, guardrails and observability.'],
   ['retail', 'Retail & Commerce', 'Retail & Commerce', 'Customer growth, order intelligence, loyalty, attribution and supply-chain visibility.'],
 ]
 
