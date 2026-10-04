@@ -4,7 +4,7 @@
 export const SITE_URL = 'https://irahsolution.com'
 
 export const DEFAULT_DESCRIPTION =
-  'IRAH Solution designs enterprise AI, blockchain and software platforms for governments, PSUs and growth-led businesses.'
+  'IRAH Solution engineers enterprise Agentic AI systems, workflow automation and production software for governments, PSUs and businesses.'
 
 // Ported from $videoMap in includes/header.php.
 export const videoMap = {
@@ -31,9 +31,9 @@ export const videoMap = {
 export const routeMeta = {
   '/': {
     pageKey: 'home',
-    title: 'IRAH Solution | Enterprise AI, Blockchain & Software',
+    title: 'IRAH Solution | Enterprise Agentic AI & Automation',
     description:
-      'Enterprise AI, blockchain and software platforms for governments, PSUs and growth-led businesses.',
+      'Enterprise Agentic AI systems, workflow automation and production engineering for governments, PSUs and businesses.',
   },
   '/platform': {
     pageKey: 'platform',
@@ -46,6 +46,11 @@ export const routeMeta = {
     title: 'Enterprise Software Development | IRAH Solution',
     description:
       'Custom software, web and mobile apps, APIs, data engineering, cloud, DevOps and application modernisation.',
+  },
+  '/agentic-ai': {
+    pageKey: 'ai',
+    title: 'Enterprise Agentic AI Systems & Automation | IRAH Solution',
+    description: 'Design and engineering for multi-agent systems, enterprise workflow automation, tool integrations, governance, evaluation and production operations.',
   },
   '/ai-ml': {
     pageKey: 'ai',
@@ -99,6 +104,11 @@ export const routeMeta = {
     title: 'Seed Traceability Platform | IRAH Solution',
     description:
       'AI and blockchain seed lineage, certification, distribution and farmer verification platform.',
+  },
+  '/case-agentic-sdlc': {
+    pageKey: 'cases',
+    title: 'Agentic SDLC Platform | IRAH Solution',
+    description: 'An agentic software delivery workflow coordinating specialist agents across requirements, design, development, testing, deployment and monitoring.',
   },
   '/case-studies': {
     pageKey: 'cases',

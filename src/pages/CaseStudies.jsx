@@ -26,6 +26,16 @@ export default function CaseStudies() {
       <section className="section">
         <div className="container">
           <div className="grid-2">
+            <Link className="card" to="/case-agentic-sdlc">
+              <span className="card-no">AGENTIC AI / SOFTWARE DELIVERY</span>
+              <h3>Agentic SDLC orchestration platform</h3>
+              <p>Six specialist agents coordinated across requirements, design, development, testing, deployment and monitoring.</p>
+            </Link>
+            <Link className="card" to="/agentic-ai">
+              <span className="card-no">ENTERPRISE AI ENGINEERING</span>
+              <h3>Agentic AI systems for enterprise workflows</h3>
+              <p>Architecture patterns for orchestration, enterprise integrations, governance and production operations.</p>
+            </Link>
             <Link className="card" to="/redis-government">
               <span className="card-no">GOVERNMENT / PERFORMANCE</span>
               <h3>Redis for government platforms</h3>
