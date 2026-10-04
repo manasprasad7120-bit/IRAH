@@ -2,9 +2,6 @@ import { Link } from 'react-router-dom'
 import ArchitectureExplorer from '../components/ArchitectureExplorer'
 import BuildShowcase from '../components/BuildShowcase'
 import CapabilityOrbit from '../components/CapabilityOrbit'
-import CapabilityShell from '../components/CapabilityShell'
-
-const SIGNAL_DELAYS = ['.2s', '.8s', '1.3s', '.5s', '1.7s', '1.1s', '.4s', '1.5s', '.9s', '1.9s', '.7s', '1.2s']
 
 const CATEGORIES = [
   'E-commerce & marketplaces',
@@ -138,32 +135,32 @@ export default function Home() {
               <p>Coordinate requirements, design, development, testing, deployment and monitoring.</p>
             </Link>
             <Link to="/government-solutions">
-              <span>01</span>
+              <span>03</span>
               <h3>Government Platform</h3>
               <p>Citizen services, departmental workflows, command views and field operations.</p>
             </Link>
             <Link to="/redis-government">
-              <span>02</span>
+              <span>04</span>
               <h3>Redis Performance Platform</h3>
               <p>Low-latency caching, session state, rate limiting and application acceleration.</p>
             </Link>
             <Link to="/ai-ml">
-              <span>03</span>
+              <span>05</span>
               <h3>Enterprise AI Platform</h3>
               <p>Document AI, RAG, vision, prediction, anomaly detection and MLOps.</p>
             </Link>
             <Link to="/blockchain">
-              <span>04</span>
+              <span>06</span>
               <h3>Blockchain Trust Platform</h3>
               <p>Provenance, credentials, audit history and multi-party workflows.</p>
             </Link>
             <Link to="/products">
-              <span>05</span>
+              <span>07</span>
               <h3>Traceability Platform</h3>
               <p>Field apps, QR verification, lineage, analytics and recall controls.</p>
             </Link>
             <Link to="/affiliate-marketing">
-              <span>06</span>
+              <span>08</span>
               <h3>Affiliate Growth Platform</h3>
               <p>Attribution, partner operations, fraud controls and reconciliation.</p>
             </Link>
