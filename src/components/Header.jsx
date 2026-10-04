@@ -29,19 +29,21 @@ export default function Header() {
         </button>
         <ul className={`nav-links${open ? ' open' : ''}`} id="navLinks" onClick={closeOnMobile}>
           <li className="has-sub">
-            <Link to="/platform">Platform</Link>
+            <Link to="/agentic-ai">Solutions</Link>
             <div className="sub-menu">
+              <Link to="/agentic-ai">Agentic AI Systems</Link>
+              <Link to="/case-agentic-sdlc">Agentic SDLC Platform</Link>
+              <Link to="/ai-ml">AI Engineering</Link>
               <Link to="/services">Enterprise Software</Link>
-              <Link to="/ai-ml">AI/ML Engineering</Link>
-              <Link to="/blockchain">Blockchain Platforms</Link>
-              <Link to="/redis-government">Redis Performance</Link>
+              <Link to="/government-solutions">Government &amp; PSU</Link>
             </div>
           </li>
           <li className="has-sub">
-            <Link to="/government-solutions">Solutions</Link>
+            <Link to="/industries">Industries</Link>
             <div className="sub-menu">
-              <Link to="/government-solutions">Government &amp; PSU</Link>
-              <Link to="/industries">Industries</Link>
+              <Link to="/industries">Explore Industries</Link>
+              <Link to="/blockchain">Blockchain &amp; Traceability</Link>
+              <Link to="/redis-government">Performance Engineering</Link>
               <Link to="/affiliate-marketing">Affiliate Growth</Link>
             </div>
           </li>
